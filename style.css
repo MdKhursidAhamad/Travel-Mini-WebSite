@@ -1,0 +1,2424 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --ast-global-color-0: #fb2056;
+    --ast-global-color-1: #db1546;
+    --ast-global-color-2: #191919;
+    --ast-global-color-3: #404040;
+    --ast-global-color-4: #dad9d9;
+    --ast-global-color-5: #ffffff;
+    --ast-global-color-6: #ececec;
+    --ast-global-color-7: #191919;
+    --ast-global-color-8: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+a {
+    list-style: none;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+/*----------------------------------------------------------------- heaer-section-elements-------------------------------------------------------------------------------*/
+.heaer-section-elements {
+    padding: 20px 5%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.header-logo-ima {
+    width: 160PX;
+    color: #da1c4b;
+    margin-top: 10px;
+}
+
+.nav-item-elements {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.unorder-item-elements {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.unorder-item-elements li a {
+    text-decoration: none;
+    color: var(--ast-global-color-6);
+    font-size: 17px;
+    letter-spacing: 0.6px;
+    font-weight: 500;
+}
+
+.unorder-item-elements .btn {
+    padding: 11px 45px;
+    background-color: var(--ast-global-color-0);
+    border-radius: 30px;
+    font-size: 16px;
+    color: var(--ast-global-color-5);
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    background-color: var(--ast-global-color-1);
+    color: var(--ast-global-color-2);
+}
+
+.mobile-menu {
+    color: var(--ast-global-color-4);
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    display: none;
+
+}
+
+.mobile-icon-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    display: none;
+}
+
+.mobile-icon-menu li a i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.mobile-menu i {
+    color: var(--ast-global-color-4);
+    margin-left: 20px;
+    font-size: 24px;
+}
+
+/* ---------------------------------------------------------------- background-section-elements-tittle ------------------------------------------------------------------*/
+.background-section-elements-tittle {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(2, 0, 0, 0.7)), url(./img/hero-bg.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+
+.hero-details-elements {
+    margin-bottom: 120px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.h2-elements {
+    font-size: 4vmin;
+    color: var(--ast-global-color-4);
+    margin-bottom: -5px;
+    font-weight: 600;
+}
+
+.p-info {
+    font-size: 14.5vmin;
+    color: var(--ast-global-color-4);
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.hero-details-elements .btn {
+    margin-top: 5px;
+    padding: 13px 25px;
+    background-color: var(--ast-global-color-0);
+    border-radius: 30px;
+    font-size: 16px;
+    color: var(--ast-global-color-5);
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+/* ---------------------------------------------------------------- hero-down-section-elements -----------------------------------------------------------------*/
+.hero-down-section-elements {
+    padding: 0px 9%;
+    width: 100%;
+    background-color: var(--ast-global-color-4);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    width: 100vw;
+    height: 30vh;
+}
+
+.hero-item-elements-contants {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 90px;
+}
+
+.img-info-img {
+    width: 100px;
+}
+
+.hero-info-details {
+    font-size: 3.1vmin;
+    color: var(--ast-global-color-3);
+    letter-spacing: 0.5px;
+    margin-top: 30px;
+
+}
+
+.p-contant-para {
+    margin-bottom: 3px;
+    font-weight: 400;
+}
+
+.span-header {
+    font-size: 2.6vmin;
+    color: var(--ast-global-color-2);
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+
+}
+
+/* ----------------------------------------------------------------- upcoming-events-section -------------------------------------------------------------------*/
+.upcoming-events-section {
+    padding: 10px 9%;
+    margin: 60px auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.upcoming-events-elements {
+    margin: 60px auto;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.h4-events-text-elements {
+    font-size: 4.5vmin;
+    color: var(--ast-global-color-7);
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.upcoming-row-section {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.col-side-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+
+.img-row {
+    width: 100%;
+    border-radius: 5px;
+    height: auto;
+    object-fit: cover;
+}
+
+.col-text {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.h2-hiking-info {
+    margin-top: 15px;
+    margin-bottom: 7px;
+    font-size: 3.3vmin;
+    font-weight: 400;
+    color: var(--ast-global-color-8);
+}
+
+.hiking-info {
+    text-align: center;
+    line-height: 25px;
+    font-size: 14.9px;
+    font-weight: 400;
+    color: var(--ast-global-color-3);
+}
+
+.col-side-section .btn {
+    margin-top: 15px;
+    padding: 13px 20px;
+    background-color: var(--ast-global-color-0);
+    border-radius: 30px;
+    font-size: 14px;
+    color: var(--ast-global-color-5);
+    font-weight: 400;
+    text-transform: uppercase;
+
+}
+
+.col-side-section .btn:hover {
+    background-color: var(--ast-global-color-1);
+    color: var(--ast-global-color-2);
+}
+
+/* ------------------------------------------------------------------------------------ explore-section-elements -------------------------------------------------- */
+.explore-section-elements {
+    height: 80vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(34, 33, 33, 0.6)), url(./img/section-bg-img.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.explore-contants-elements {
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50%;
+    margin-bottom: 90px;
+}
+
+.h3-explore {
+    font-size: 5.5vmin;
+    font-weight: 700;
+    color: var(--ast-global-color-6);
+    margin-bottom: 12px;
+}
+
+.p-explore {
+    line-height: 22px;
+    font-size: 18px;
+    letter-spacing: 0.7px;
+    color: var(--ast-global-color-6);
+    width: 600px;
+}
+
+.explore-contants-elements .btn {
+    padding: 13px 20px;
+    background-color: var(--ast-global-color-0);
+    width: 140px;
+    border-radius: 20px;
+    white-space: nowrap;
+    margin-top: 12px;
+    font-size: 14.3px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.explore-contants-elements .btn:hover {
+    background-color: var(--ast-global-color-1);
+    color: var(--ast-global-color-8);
+}
+
+/* ------------------------------------------------------------------------ upcoming-tour-events-elements2222---------------------------------------------*/
+.upcoming-tour-events {
+    width: 100%;
+    padding: 8% 9%;
+}
+
+.upcoming-tours-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+
+}
+
+.upcoming-tours-image-item {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.col-image-events-elements {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.h4-events {
+    font-size: 3.7rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: var(--ast-global-color-8);
+}
+
+.p-upcoming-events {
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--ast-global-color-3);
+    margin-bottom: 25px;
+}
+
+.upcoming-tours-col .btn {
+    padding: 11px 35px;
+    border-radius: 30px;
+    font-size: 18px;
+    color: var(--ast-global-color-6);
+    background-color: var(--ast-global-color-0);
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    background-color: var(--ast-global-color-1);
+    color: #000000;
+}
+
+.col-2nd-image-element {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 350px;
+}
+
+.events {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+/* ------------------------------------------------------------------------ footer-section-contants-element ----------------------------------------------*/
+.footer-section-contants-elements {
+    background-color: var(--ast-global-color-4);
+    width: 100vw;
+    height: 60vh;
+    padding: 0px 9%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid var(--ast-global-color-8);
+}
+
+.footer-contants-item-elements-2233 {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-services-333 {
+    display: flex;
+    flex-direction: column;
+}
+
+.h2-22 {
+    font-size: 4vmin;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.li-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.li-list a {
+    font-size: 2vmin;
+    color: var(--ast-global-color-3);
+    transition: all .3s linear;
+}
+
+.li-list a:hover {
+    color: var(--ast-global-color-2);
+    transform: translate(5px);
+}
+
+.footer-media-icon {
+    display: flex;
+
+    flex-direction: column;
+    margin-bottom: 5px;
+}
+
+.media-icon {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    font-size: 21px;
+}
+
+.f00ter-payment-systems {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+.paymant-h2 {
+    font-size: 4vmin;
+    font-weight: 400;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.payments-item a {
+    font-size: 2vmin;
+    color: var(--ast-global-color-3);
+    transition: all .3s ease-out;
+}
+
+.payments-item a:hover {
+    color: var(--ast-global-color-2);
+    transform: translateX(6px);
+}
+
+.payments-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-img {
+    width: 250px;
+    height: auto;
+    object-fit: cover;
+}
+
+/*--------------------------------------------------------------------- copyright-section ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.copyright-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    white-space: nowrap;
+    background-color: var(--ast-global-color-7);
+    height: 8vh;
+    color: var(--ast-global-color-6);
+    border-top: 1px solid rgb(255, 35, 35);
+}
+
+.span-copy {
+    font-size: 15px;
+    color: var(--ast-global-color-6);
+    letter-spacing: 0.5px;
+}
+
+.copyright {
+    font-size: 15px;
+}
+
+/*--------------------------------------------------------------------- mobile devices -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+@media (min-width:1200px) {
+
+    /* ---------------------------------------------------------------- hero-down-section-elements -----------------------------------------------------------------*/
+    .hero-down-section-elements {
+        padding: 0px 9%;
+        width: 100%;
+        background-color: var(--ast-global-color-4);
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: space-between;
+        width: 100vw;
+        height: 30vh;
+    }
+
+    .hero-item-elements-contants {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 190px;
+    }
+
+    /* -------------------------------------------------------------------------------------------------background-section-elements-tittle--------------------------------------------------------------------------*/
+    .background-section-elements-tittle {
+        width: 100vw;
+        display: flex;
+        align-items: flex-end;
+        padding: 0% 5%;
+    }
+
+    .hero-details-elements {
+        margin-bottom: 60px;
+
+    }
+
+    .h2-elements {
+        margin-bottom: 4px;
+        font-size: 3.5vh;
+        font-weight: 500;
+        font-family: "Roboto", sans-serif;
+    }
+
+    .p-info {
+        width: 780px;
+        font-size: 16vh;
+        line-height: 100px;
+        font-weight: 550;
+        font-family: "Roboto", sans-serif;
+        margin: -2px;
+        margin-bottom: 4px;
+    }
+
+
+}
+
+@media (max-width:1200px) {
+
+    /* ---------------------------------------------------------------- hero-down-section-elements -----------------------------------------------------------------*/
+    .hero-down-section-elements {
+        padding: 0px 9%;
+        width: 100%;
+        background-color: var(--ast-global-color-4);
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: space-between;
+        width: 100vw;
+        height: 30vh;
+    }
+
+    .hero-item-elements-contants {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 180px;
+    }
+
+    /* ------------------------------------------------------------------------------------ explore-section-elements -------------------------------------------------- */
+    .explore-section-elements {
+        width: 100vw;
+        height: 78vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .explore-contants-elements {
+        padding-left: 40%;
+        display: flex;
+        align-items: stretch;
+        justify-content: center;
+        margin: auto;
+
+    }
+
+    .explore-contants-elements h3 {
+        font-size: 7vh;
+        font-weight: 500;
+    }
+
+    .explore-contants-elements p {
+        padding-right: 10%;
+        font-size: 15px;
+    }
+
+    /*-------------------------------------------------------------------------------------------------------------------------------------------------------------------upcoming-tour-events------------------------------------------------------------------------------------------*/
+    .upcoming-tour-events {
+        width: 100%;
+        padding: 4% 9%;
+        margin: 50px auto;
+    }
+
+    .upcoming-tours-row {
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+    }
+
+    .upcoming-tours-col h4 {
+        font-size: 5vh;
+        font-weight: 600;
+    }
+
+    .upcoming-tours-col p {
+        font-size: 12px;
+    }
+
+    .col-image-events-elements {
+        width: 300px;
+    }
+
+    .col-2nd-image-element {
+        width: 300px;
+    }
+
+    .upcoming-tours-col .btn {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    .events {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+}
+
+@media (max-width:950px) {
+    .unorder-item-elements {
+        width: 38%;
+        height: 100vh;
+        background-color: var(--ast-global-color-3);
+        position: fixed;
+        z-index: 998;
+        top: 0;
+        bottom: 0;
+        left: -100%;
+        flex-direction: column;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 0px 13%;
+        display: none;
+        transition: left 4s ease-in-out;
+    }
+
+    .unorder-item-elements.active {
+        display: flex;
+        left: 0;
+    }
+
+    .unorder-item-elements li a {
+        font-size: 17px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 2px;
+
+    }
+
+    .mobile-icon-menu {
+        display: block;
+        display: flex;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .mobile-icon-menu li a i {
+        font-size: 18px;
+    }
+
+    .mobile-icon-menu li a i:hover {
+        color: var(--ast-global-color-0);
+    }
+
+    .mobile-menu {
+        display: block;
+        color: var(--ast-global-color-6);
+    }
+
+    .heaer-section-elements {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 999;
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .header-logo {
+        position: relative;
+        z-index: 1002;
+        padding: 10px 5%;
+    }
+
+    .header-logo-ima {
+        width: 150px;
+    }
+
+    /* -------------------------------------------------------------------------------------------------background-section-elements-tittle--------------------------------------------------------------------------*/
+    .background-section-elements-tittle {
+        width: 100vw;
+        height: 99vh;
+        display: flex;
+        align-items: flex-end;
+        padding: 0% 5%;
+    }
+
+    .hero-details-elements {
+        margin-bottom: 80px;
+
+    }
+
+    .h2-elements {
+        font-size: 3.5vh;
+        font-weight: 500;
+        font-family: "Roboto", sans-serif;
+    }
+
+    .p-info {
+        font-size: 11vh;
+        font-weight: 550;
+        font-family: "Roboto", sans-serif;
+        margin: -2px;
+        white-space: nowrap;
+    }
+
+    /* ---------------------------------------------------------------- hero-down-section-elements -----------------------------------------------------------------*/
+    .hero-down-section-elements {
+        padding: auto;
+        margin: auto;
+        width: 100vw;
+        height: 25vh;
+    }
+
+    .hero-item-elements-contants {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .img-info-img {
+        width: 95px;
+    }
+
+    .p-contant-para {
+        width: 500px;
+        font-size: 2.2vh;
+        font-weight: 200;
+        color: var(--ast-global-color-3);
+    }
+
+    .span-header {
+        font-size: 3vh;
+    }
+
+    /* ----------------------------------------------------------------- upcoming-events-section -------------------------------------------------------------------*/
+    .upcoming-events-section {
+        padding: 0% 9%;
+        margin-bottom: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .upcoming-events-elements h4 {
+        font-size: 5vh;
+        font-weight: 600;
+    }
+
+    .upcoming-row-section {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .img-row {
+        width: 100%;
+        border-radius: 5px;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .h2-hiking-info {
+        margin-top: 15px;
+        margin-bottom: 7px;
+        font-size: 3.6vh;
+        font-weight: 400;
+        color: var(--ast-global-color-8);
+    }
+
+    .hiking-info {
+        text-align: center;
+        line-height: 18px;
+        font-size: 2.1vh;
+        font-weight: 200;
+        color: var(--ast-global-color-3);
+    }
+
+    /* ------------------------------------------------------------------------------------ explore-section-elements -------------------------------------------------- */
+    .explore-section-elements {
+        width: 100vw;
+        height: 78vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .explore-contants-elements {
+        padding-left: 30%;
+        display: flex;
+        align-items: stretch;
+        justify-content: center;
+        margin: auto;
+
+    }
+
+    .explore-contants-elements h3 {
+        font-size: 7vh;
+        font-weight: 500;
+    }
+
+    .explore-contants-elements p {
+        padding-right: 10%;
+        font-size: 15px;
+    }
+
+    /*-------------------------------------------------------------------------------------------------------------------------------------------------------------------upcoming-tour-events------------------------------------------------------------------------------------------*/
+    .upcoming-tour-events {
+        width: 100%;
+        padding: 0px 9%;
+        margin: 60px auto;
+    }
+
+    .upcoming-tours-row {
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+    }
+
+    .upcoming-tours-col h4 {
+        font-size: 5vh;
+        font-weight: 600;
+    }
+
+    .upcoming-tours-col p {
+        font-size: 12px;
+    }
+
+    .col-image-events-elements {
+        width: 260px;
+    }
+
+    .col-2nd-image-element {
+        width: 250px;
+    }
+
+    .upcoming-tours-col .btn {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    .events {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    /* ------------------------------------------------------------------------ footer-section-contants-element ----------------------------------------------*/
+    .footer-section-contants-elements {
+        width: 100vw;
+        height: 45vh;
+        padding: 0% 9%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-contants-item-elements-2233 {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer-img {
+        width: 150px;
+        height: auto;
+    }
+
+    .h2-22 {
+        font-size: 3.2vmin;
+        font-size: 400;
+    }
+
+    .li-list {
+        margin-top: 5px;
+        place-self: center;
+    }
+
+    .li-list a {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .media-icon {
+        font-size: 17px;
+        color: #870223;
+    }
+
+    .paymant-h2 {
+        font-size: 3.2vmin;
+        font-weight: 400;
+    }
+
+    .payments-item {
+        display: flex;
+        align-content: center;
+        place-self: center;
+        margin-top: 5px;
+
+    }
+
+    .payments-item a {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .span-copy {
+        font-size: 15px;
+        color: var(--ast-global-color-6);
+        letter-spacing: 0.5px;
+    }
+
+    .copyright {
+        font-size: 15px;
+    }
+}
+
+@media (max-width:870px) {
+
+    /* -------------------------------------------------------------------------------------------------background-section-elements-tittle--------------------------------------------------------------------------*/
+    .background-section-elements-tittle {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: flex-end;
+        padding: 0% 5%;
+    }
+
+    .hero-details-elements {
+        margin-bottom: 80px;
+
+    }
+
+    .h2-elements {
+        font-size: 3.5vh;
+        font-weight: 500;
+        font-family: "Roboto", sans-serif;
+    }
+
+    .p-info {
+        font-size: 10vh;
+        font-weight: 500;
+        font-family: "Roboto", sans-serif;
+        margin: -2px;
+        white-space: nowrap;
+    }
+
+    /* ---------------------------------------------------------------- hero-down-section-elements -----------------------------------------------------------------*/
+    .hero-down-section-elements {
+        padding: auto;
+        margin: auto;
+        width: 100vw;
+        height: 20vh;
+    }
+
+    .hero-item-elements-contants {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 50px;
+    }
+
+    .img-info-img {
+        width: 90px;
+    }
+
+    .p-contant-para {
+        width: 500px;
+        font-size: 2vh;
+        font-weight: 400;
+        color: var(--ast-global-color-3);
+    }
+
+    .span-header {
+        font-size: 2.5vh;
+    }
+
+    /* ----------------------------------------------------------------- upcoming-events-section -------------------------------------------------------------------*/
+    .upcoming-events-section {
+        padding: 0% 9%;
+        margin-bottom: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .upcoming-events-elements h4 {
+        font-size: 5vh;
+        font-weight: 600;
+    }
+
+    .upcoming-row-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .img-row {
+        width: 100%;
+        border-radius: 5px;
+        height: auto;
+        object-fit: cover;
+    }
+
+    /* ------------------------------------------------------------------------------------ explore-section-elements -------------------------------------------------- */
+    .explore-section-elements {
+        width: 100vw;
+        height: 78vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .explore-contants-elements {
+        padding-left: 30%;
+        display: flex;
+        align-items: stretch;
+        justify-content: center;
+        margin: auto;
+
+    }
+
+    .explore-contants-elements h3 {
+        font-size: 6vh;
+        font-weight: 600;
+    }
+
+    .explore-contants-elements p {
+        padding-right: 10%;
+        font-size: 13px;
+        font-weight: 500;
+    }
+
+    /*-------------------------------------------------------------------------------------------------------------------------------------------------------------------upcoming-tour-events------------------------------------------------------------------------------------------*/
+    .upcoming-tour-events {
+        width: 100%;
+        padding: 0px 9%;
+        margin: 90px auto;
+    }
+
+    .upcoming-tours-row {
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+    }
+
+    .upcoming-tours-col h4 {
+        font-size: 5vh;
+        font-weight: 600;
+    }
+
+    .upcoming-tours-col p {
+        font-size: 12px;
+    }
+
+    .col-image-events-elements {
+        width: 220px;
+    }
+
+    .col-2nd-image-element {
+        width: 220px;
+    }
+
+    .upcoming-tours-col .btn {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    .events {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+}
+
+@media (max-width:750px) {
+
+    /* -------------------------------------------------------------------------------------------------background-section-elements-tittle--------------------------------------------------------------------------*/
+    .background-section-elements-tittle {
+        width: 100vw;
+        height: 99vh;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .hero-details-elements {
+        margin-bottom: 60px;
+        padding: 0% 4%;
+    }
+
+    .h2-elements {
+        font-size: 3vh;
+        font-weight: 400;
+        font-family: "Roboto", sans-serif;
+    }
+
+    .p-info {
+        font-size: 10vh;
+        font-weight: 550;
+        font-family: "Roboto", sans-serif;
+        margin: -2px;
+        white-space: nowrap;
+    }
+
+    .hero-down-section-elements {
+        padding: auto;
+        margin: auto;
+        width: 100vw;
+        height: 25vh;
+    }
+
+    /* ---------------------------------------------------------------- hero-down-section-elements -----------------------------------------------------------------*/
+
+    .hero-item-elements-contants {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .img-info-img {
+        width: 85px;
+    }
+
+    .p-contant-para {
+        width: 500px;
+        font-size: 2.1vh;
+        font-weight: 200;
+        color: var(--ast-global-color-3);
+    }
+
+    .span-header {
+        font-size: 2.5vh;
+    }
+
+    /* ----------------------------------------------------------------- upcoming-events-section -------------------------------------------------------------------*/
+    .upcoming-events-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .upcoming-events-elements h4 {
+        font-size: 4.5vh;
+        font-weight: 500;
+    }
+
+    .upcoming-row-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .img-row {
+        width: 100%;
+        border-radius: 5px;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .h2-hiking-info {
+        margin-top: 15px;
+        margin-bottom: 7px;
+        font-size: 3.1vh;
+        font-weight: 400;
+        color: var(--ast-global-color-8);
+    }
+
+    .hiking-info {
+        line-height: 18px;
+        font-size: 2vh;
+        color: var(--ast-global-color-3);
+    }
+
+    .col-side-section .btn {
+        padding: 12px 20px;
+        font-size: 12px;
+    }
+
+    /* ------------------------------------------------------------------------------------ explore-section-elements -------------------------------------------------- */
+    .explore-section-elements {
+        width: 100vw;
+        height: 70vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .explore-contants-elements {
+        padding-left: 25%;
+        display: flex;
+        align-items: stretch;
+        justify-content: center;
+        margin: auto;
+
+    }
+
+    .explore-contants-elements h3 {
+        font-size: 6vh;
+        font-weight: 500;
+    }
+
+    .explore-contants-elements p {
+        padding-right: 12%;
+        font-size: 13px;
+    }
+
+    .explore-contants-elements .btn {
+        padding: 12px 20px;
+        background-color: var(--ast-global-color-0);
+        width: 120px;
+        font-size: 12px;
+    }
+
+    /*-------------------------------------------------------------------------------------------------------------------------------------------------------------------upcoming-tour-events------------------------------------------------------------------------------------------*/
+    .upcoming-tour-events {
+        width: 100%;
+        padding: 2% 9.2%;
+    }
+
+    .upcoming-tours-row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .upcoming-tours-col h4 {
+        font-size: 5vh;
+        font-weight: 500;
+    }
+
+    .upcoming-tours-col p {
+        font-size: 12px;
+    }
+
+    .col-image-events-elements {
+        width: 300px;
+    }
+
+    .upcoming-tours-image-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .col-2nd-image-element {
+        width: 300px;
+    }
+
+    .upcoming-tours-col .btn {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    .events {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .header-logo .header-logo-ima {
+        width: 115px;
+        margin-top: 6px;
+    }
+
+    .mobile-menu i {
+        font-size: 20px;
+        margin-right: 15px;
+    }
+
+    .unorder-item-elements {
+        width: 35%;
+        height: 100vh;
+    }
+
+    .unorder-item-elements li a {
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 2px;
+
+    }
+
+    .unorder-item-elements .btn {
+        padding: 11px 38px;
+        font-size: 15px;
+
+    }
+
+    .mobile-icon-menu {
+        gap: 7px;
+        margin-top: 5px;
+    }
+
+    .mobile-icon-menu li a i {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 17px;
+    }
+}
+
+@media (max-width:650px) {
+
+    /* -------------------------------------------------------------------------------------------------background-section-elements-tittle--------------------------------------------------------------------------*/
+    .background-section-elements-tittle {
+        width: 100vw;
+        height: 99vh;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .hero-details-elements {
+        margin-bottom: 60px;
+    }
+
+    .h2-elements {
+        font-size: 2.5vh;
+        font-weight: 500;
+        font-family: "Roboto", sans-serif;
+    }
+
+    .p-info {
+        font-size: 8vh;
+        white-space: nowrap;
+    }
+
+    .hero-details-elements .btn {
+        font-size: 12px;
+    }
+
+    /* ---------------------------------------------------------------- hero-down-section-elements -----------------------------------------------------------------*/
+
+    .hero-item-elements-contants {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .img-info-img {
+        width: 78px;
+    }
+
+    .p-contant-para {
+        width: 350px;
+        font-size: 12px;
+        font-weight: 399;
+        color: var(--ast-global-color-3);
+    }
+
+    .span-header {
+        font-size: 2.2vmin;
+        color: var(--ast-global-color-2);
+        letter-spacing: 0.5px;
+        white-space: nowrap;
+
+    }
+
+    /* ----------------------------------------------------------------- upcoming-events-section -------------------------------------------------------------------*/
+    .upcoming-events-section {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .upcoming-events-elements h4 {
+        font-size: 5vh;
+        font-weight: 400;
+    }
+
+    .upcoming-row-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .img-row {
+        width: 100%;
+        border-radius: 5px;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .h2-hiking-info {
+        margin-top: 15px;
+        margin-bottom: 7px;
+        font-size: 3.1vh;
+        font-weight: 300;
+        color: var(--ast-global-color-8);
+    }
+
+    .hiking-info {
+        line-height: 18px;
+        font-size: 2vh;
+        font-weight: 300;
+        color: var(--ast-global-color-3);
+    }
+
+    .col-side-section .btn {
+        padding: 10px 20px;
+        font-size: 11px;
+    }
+
+    /* ------------------------------------------------------------------------------------ explore-section-elements -------------------------------------------------- */
+    .explore-section-elements {
+        width: 100vw;
+        margin-top: 90px;
+        height: 60vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .explore-contants-elements {
+        padding-left: 25%;
+        display: flex;
+        align-items: stretch;
+        justify-content: center;
+        margin: auto;
+
+    }
+
+    .explore-contants-elements h3 {
+        font-size: 5vh;
+        font-weight: 600;
+    }
+
+    .explore-contants-elements p {
+        padding-right: 20%;
+        font-size: 11px;
+        line-height: 15px;
+    }
+
+    .explore-contants-elements .btn {
+        padding: 11px 20px;
+        background-color: var(--ast-global-color-0);
+        width: 120px;
+        font-size: 11px;
+    }
+
+    /* ------------------------------------------------------------------------ footer-section-contants-element ----------------------------------------------*/
+    .footer-section-contants-elements {
+        width: 100vw;
+        height: 60vh;
+        padding: 0% 9%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-contants-item-elements-2233 {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+    }
+
+    .footer-img {
+        width: 140px;
+        height: auto;
+    }
+
+    .h2-22 {
+        font-size: 3.2vmin;
+        font-size: 400;
+    }
+
+    .li-list {
+        margin-top: 5px;
+        place-self: center;
+    }
+
+    .li-list a {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .media-icon {
+        font-size: 17px;
+        color: #870223;
+    }
+
+    .paymant-h2 {
+        font-size: 3.2vmin;
+        font-weight: 400;
+    }
+
+    .payments-item {
+        display: flex;
+        align-content: center;
+        place-self: center;
+        margin-top: 5px;
+
+    }
+
+    .payments-item a {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .span-copy {
+        font-size: 12px;
+        color: var(--ast-global-color-6);
+        letter-spacing: 0.5px;
+    }
+
+    .copyright {
+        font-size: 12px;
+    }
+
+    .header-logo .header-logo-ima {
+        width: 110px;
+        margin-top: 6px;
+    }
+
+    .mobile-menu i {
+        font-size: 19px;
+        margin-right: 15px;
+    }
+
+    .unorder-item-elements {
+        width: 40%;
+        height: 100vh;
+    }
+
+    .unorder-item-elements li a {
+        font-size: 17px;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 2px;
+
+    }
+
+    .unorder-item-elements .btn {
+        padding: 10px 34px;
+        font-size: 15px;
+
+    }
+
+    .mobile-icon-menu {
+        gap: 5px;
+        margin-top: 5px;
+    }
+
+    .mobile-icon-menu li a i {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+    }
+
+}
+
+@media (max-width:550px) {
+
+    /* -------------------------------------------------------------------------------------------------background-section-elements-tittle--------------------------------------------------------------------------*/
+    .background-section-elements-tittle {
+        width: 100vw;
+        height: 90vh;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .hero-details-elements {
+        margin-bottom: 80px;
+    }
+
+    .h2-elements {
+        font-size: 2.2vh;
+        font-weight: 600;
+        font-family: "Roboto", sans-serif;
+    }
+
+    .p-info {
+        font-size: 7.2vh;
+    }
+
+    .hero-details-elements .btn {
+        font-size: 11px;
+    }
+
+    /* ---------------------------------------------------------------- hero-down-section-elements -----------------------------------------------------------------*/
+
+    .hero-item-elements-contants {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 40px;
+    }
+
+    .img-info-img {
+        width: 70px;
+    }
+
+    .p-contant-para {
+        width: 250px;
+        text-align: center;
+        font-size: 12px;
+        font-weight: 399;
+        color: var(--ast-global-color-3);
+    }
+
+    .span-header {
+        font-size: 3.9vmin;
+        color: var(--ast-global-color-2);
+        letter-spacing: 0.5px;
+        white-space: nowrap;
+
+    }
+
+    /* ----------------------------------------------------------------- upcoming-events-section -------------------------------------------------------------------*/
+    .upcoming-events-section {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .upcoming-events-elements h4 {
+        font-size: 4.4vh;
+        font-weight: 400;
+    }
+
+    .upcoming-row-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        row-gap: 40px;
+    }
+
+    .img-row {
+        width: 100%;
+        border-radius: 5px;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .h2-hiking-info {
+        margin-top: 15px;
+        margin-bottom: 7px;
+        font-size: 3.1vh;
+        font-weight: 300;
+        color: var(--ast-global-color-8);
+    }
+
+    .hiking-info {
+        line-height: 18px;
+        font-size: 2vh;
+        font-weight: 300;
+        color: var(--ast-global-color-3);
+    }
+
+    .col-side-section .btn {
+        padding: 10px 20px;
+        font-size: 11px;
+    }
+
+    /* ------------------------------------------------------------------------------------ explore-section-elements -------------------------------------------------- */
+    .explore-section-elements {
+        width: 100vw;
+        margin-top: 60px;
+        height: 60vh;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .explore-contants-elements {
+        padding: 0% 0%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .explore-contants-elements h3 {
+        font-size: 6vh;
+        font-weight: 500;
+    }
+
+    .explore-contants-elements p {
+        padding-right: 0%;
+        text-align: center;
+        width: 320px;
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .explore-contants-elements .btn {
+        padding: 10px 20px;
+        background-color: var(--ast-global-color-0);
+        width: 110px;
+        font-size: 11px;
+    }
+
+    /* ------------------------------------------------------------------------ footer-section-contants-element ----------------------------------------------*/
+    .footer-section-contants-elements {
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-contants-item-elements-2233 {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .h2-22 {
+        font-size: 6vmin;
+        font-size: 500;
+    }
+
+    .li-list {
+        margin-top: 5px;
+        place-self: center;
+    }
+
+    .li-list a {
+        font-size: 13px;
+        line-height: 16px;
+    }
+
+    .media-icon {
+        display: flex;
+        flex-direction: row;
+        font-size: 17px;
+    }
+
+    .paymant-h2 {
+        font-size: 5vmin;
+        font-weight: 500;
+    }
+
+
+    .footer-img {
+        width: 140px;
+        height: auto;
+    }
+
+    .header-logo .header-logo-ima {
+        width: 105px;
+        margin-top: 6px;
+    }
+
+    .mobile-menu i {
+        font-size: 19px;
+        margin-right: 15px;
+    }
+
+    .unorder-item-elements {
+        width: 48%;
+        height: 100vh;
+    }
+
+    .unorder-item-elements li a {
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 2px;
+
+    }
+
+    .unorder-item-elements .btn {
+        padding: 10px 34px;
+        font-size: 14px;
+
+    }
+
+    .mobile-icon-menu {
+        gap: 5px;
+        margin-top: 5px;
+    }
+
+    .mobile-icon-menu li a i {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 17px;
+    }
+}
+
+@media (max-width:400px) {
+
+    /* -------------------------------------------------------------------------------------------------background-section-elements-tittle--------------------------------------------------------------------------*/
+    .background-section-elements-tittle {
+        width: 100vw;
+        height: 99vh;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .hero-details-elements {
+        margin-bottom: 90px;
+    }
+
+    .h2-elements {
+        font-size: 2.2vh;
+        font-weight: 600;
+        font-family: "Roboto", sans-serif;
+    }
+
+    .p-info {
+        font-size: 6.5vh;
+    }
+
+    .hero-details-elements .btn {
+        font-size: 11px;
+    }
+
+    /* ---------------------------------------------------------------- hero-down-section-elements -----------------------------------------------------------------*/
+
+    .hero-item-elements-contants {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+    }
+
+    .img-info-img {
+        width: 60px;
+    }
+
+    .p-contant-para {
+        width: 200px;
+        font-size: 12px;
+        font-weight: 399;
+        color: var(--ast-global-color-3);
+    }
+
+    .span-header {
+        font-size: 3.2vmin;
+        color: var(--ast-global-color-2);
+        letter-spacing: 0.5px;
+        white-space: nowrap;
+
+    }
+
+    /* ----------------------------------------------------------------- upcoming-events-section -------------------------------------------------------------------*/
+    .upcoming-events-section {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img-row {
+        width: 100%;
+        border-radius: 5px;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .h2-hiking-info {
+        margin-top: 15px;
+        margin-bottom: 7px;
+        font-size: 3.1vh;
+        font-weight: 300;
+        color: var(--ast-global-color-8);
+    }
+
+    .hiking-info {
+        line-height: 18px;
+        font-size: 2vh;
+        font-weight: 300;
+        color: var(--ast-global-color-3);
+    }
+
+    .col-side-section .btn {
+        padding: 10px 20px;
+        font-size: 11px;
+    }
+
+    /* ------------------------------------------------------------------------------------ explore-section-elements -------------------------------------------------- */
+    .explore-section-elements {
+        width: 100vw;
+        margin-top: 60px;
+        height: 60vh;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .explore-contants-elements {
+        padding: 0% 0%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .explore-contants-elements h3 {
+        font-size: 5vh;
+        font-weight: 500;
+    }
+
+    .explore-contants-elements p {
+        padding-right: 0%;
+        text-align: center;
+        width: 320px;
+        font-size: 11px;
+        line-height: 15px;
+    }
+
+    .explore-contants-elements .btn {
+        padding: 10px 20px;
+        background-color: var(--ast-global-color-0);
+        width: 110px;
+        font-size: 11px;
+    }
+
+    /*------------------------------------------------------------------------------------------upcoming-events-section-------------------------------------------------*/
+    .upcoming-events-section {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .upcoming-tours-image-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .upcoming-tours-row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .col-image-events-elements {
+        width: 320px;
+    }
+
+
+    .col-2nd-image-element {
+        width: 320px;
+    }
+
+    .events {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    /* ------------------------------------------------------------------------ footer-section-contants-element ----------------------------------------------*/
+    .footer-img {
+        width: 140px;
+        height: auto;
+    }
+
+    .h2-22 {
+        font-size: 3.2vmin;
+        font-size: 400;
+    }
+
+    .li-list {
+        margin-top: 5px;
+        place-self: center;
+    }
+
+    .li-list a {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .media-icon {
+        font-size: 17px;
+        color: #870223;
+    }
+
+    .paymant-h2 {
+        font-size: 3.2vmin;
+        font-weight: 400;
+    }
+
+    .payments-item {
+        display: flex;
+        align-content: center;
+        place-self: center;
+        margin-top: 5px;
+
+    }
+
+    .payments-item a {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .span-copy {
+        font-size: 12px;
+        color: var(--ast-global-color-6);
+        letter-spacing: 0.5px;
+    }
+
+    .copyright {
+        font-size: 12px;
+    }
+
+
+
+    /* ------------------------------------------------------------------------ footer-section-contants-element ----------------------------------------------*/
+    .footer-section-contants-elements {
+        width: 100vw;
+        height: 70vh;
+        padding: 0% 9%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-contants-item-elements-2233 {
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .h2-22 {
+        font-size: 5vmin;
+        font-size: 500;
+    }
+
+    .li-list {
+        margin-top: 5px;
+        place-self: center;
+    }
+
+    .li-list a {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .media-icon {
+        display: flex;
+        flex-direction: row;
+        font-size: 17px;
+    }
+
+    .paymant-h2 {
+        font-size: 4vmin;
+        font-weight: 500;
+    }
+
+
+    .footer-img {
+        width: 140px;
+        height: auto;
+    }
+
+    .header-logo .header-logo-ima {
+        width: 98px;
+        margin-top: 6px;
+    }
+
+    .mobile-menu i {
+        font-size: 19px;
+        margin-right: 15px;
+    }
+
+    .unorder-item-elements {
+        width: 52%;
+        height: 100vh;
+    }
+
+    .unorder-item-elements li a {
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 2px;
+
+    }
+
+    .unorder-item-elements .btn {
+        padding: 10px 34px;
+        font-size: 15px;
+
+    }
+
+    .mobile-icon-menu {
+        gap: 5px;
+        margin-top: 5px;
+    }
+
+    .mobile-icon-menu li a i {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+    }
+}
+
+@media (max-width:360px) {
+
+    /* -------------------------------------------------------------------------------------------------background-section-elements-tittle--------------------------------------------------------------------------*/
+    .background-section-elements-tittle {
+        width: 100vw;
+        height: 90vh;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .hero-details-elements {
+        margin-bottom: 80px;
+    }
+
+    .h2-elements {
+        font-size: 2.3vh;
+        font-weight: 600;
+        font-family: "Roboto", sans-serif;
+    }
+
+    .p-info {
+        font-size: 5.6vh;
+        margin-top: 6px;
+    }
+
+    .hero-details-elements .btn {
+        font-size: 9px;
+    }
+
+    /* ---------------------------------------------------------------- hero-down-section-elements -----------------------------------------------------------------*/
+
+    .hero-item-elements-contants {
+        width: 100%;
+        height: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+    }
+
+    .img-info-img {
+        width: 50px;
+    }
+
+    .p-contant-para {
+        width: 200px;
+        font-size: 11px;
+        font-weight: 399;
+        color: var(--ast-global-color-3);
+    }
+
+    .span-header {
+        font-size: 3.4vmin;
+        color: var(--ast-global-color-2);
+        letter-spacing: 0.5px;
+        white-space: nowrap;
+
+    }
+
+    /* ----------------------------------------------------------------- upcoming-events-section -------------------------------------------------------------------*/
+    .upcoming-events-section {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0% 6%;
+        margin-bottom: 50px;
+    }
+
+    .upcoming-events-elements .h4-events-text-elements {
+        font-size: 3vh;
+        font-weight: 600;
+        margin: auto;
+    }
+
+    .img-row {
+        width: 100%;
+        border-radius: 5px;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .h2-hiking-info {
+        margin-top: 15px;
+        margin-bottom: 7px;
+        font-size: 3vh;
+        font-weight: 400;
+        color: var(--ast-global-color-8);
+    }
+
+    .hiking-info {
+        line-height: 13px;
+        font-size: 1.6vh;
+        font-weight: 400;
+        color: var(--ast-global-color-3);
+    }
+
+    .col-side-section .btn {
+        padding: 10px 18px;
+        font-size: 10px;
+    }
+
+    /* ------------------------------------------------------------------------------------ explore-section-elements -------------------------------------------------- */
+    .explore-section-elements {
+        width: 100vw;
+        margin-top: 10px;
+        height: 50vh;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .explore-contants-elements {
+        padding: 0% 0%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .explore-contants-elements h3 {
+        font-size: 4vh;
+        font-weight: 500;
+    }
+
+    .explore-contants-elements p {
+        padding-right: 0%;
+        text-align: center;
+        width: 320px;
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    .explore-contants-elements .btn {
+        padding: 10px 20px;
+        background-color: var(--ast-global-color-0);
+        width: 110px;
+        font-size: 10px;
+    }
+
+    /*------------------------------------------------------------------------------------------upcoming-events-section-------------------------------------------------*/
+    .upcoming-tours-image-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .upcoming-tour-events {
+        width: 100%;
+
+    }
+
+    .upcoming-tours-row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .col-image-events-elements {
+        width: 280px;
+    }
+
+
+    .col-2nd-image-element {
+        width: 280px;
+    }
+
+    .events {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .media-icon {
+        font-size: 13px;
+        color: #870223;
+    }
+
+    .header-logo .header-logo-ima {
+        width: 93px;
+        margin-top: 6px;
+    }
+
+    .mobile-menu i {
+        font-size: 18px;
+        margin-right: 15px;
+    }
+
+    .unorder-item-elements {
+        width: 55%;
+        height: 100vh;
+    }
+
+    .unorder-item-elements li a {
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 2px;
+
+    }
+
+    .unorder-item-elements .btn {
+        padding: 10px 32px;
+        font-size: 12px;
+
+    }
+
+    .mobile-icon-menu {
+        gap: 5px;
+        margin-top: 5px;
+    }
+
+    .mobile-icon-menu li a i {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        color: #fea9be;
+    }
+}
